@@ -1,6 +1,6 @@
 --print("Hello World!")
 
--- Basic Variables in lua
+--[[Basic Variables in lua
 
 name= "John"
 number = 24
