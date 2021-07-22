@@ -68,7 +68,7 @@ print(array[1])
 
 --]]
 
--- ***Loops
+--[[ ***Loops
 
 for i = 1, 20 do 
     print(i)
@@ -80,3 +80,4 @@ while loop <= 10 do
     print("Loop:" .. loop)
     loop = loop + 1
 end 
+--]]
