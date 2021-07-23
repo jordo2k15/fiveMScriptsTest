@@ -1,7 +1,7 @@
 function alert(msg)
     SetTextComponentFormat("STRING")
     AddTextComponentString(msg)
-    DisplayHelpTextFromStringlabel(0,0,1,-1)
+    DisplayHelpTextFromStringLabel(0,0,1,-1)
 end
 
 function notify(msg)
@@ -11,5 +11,5 @@ function notify(msg)
 end
 
 function giveWeapon(hash)
-    GiveWeaponToPed(GetPlayerPed(-1), GetHashKey(hash), 999, false, true)
+    GiveWeaponToPed(GetPlayerPed(-1), GetHashKey(hash), 999, false, false)
 end
