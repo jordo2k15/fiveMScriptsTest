@@ -30,13 +30,22 @@ function SecondItem(menu)
         end
     end
 end
-
--- Used in "ThirdItem"
+function ThirdItem(menu)
+    local click = NativeUI.CreateItem("Respawn", "~g~Respawn")
+    menu:AddItem(click)
+    menu.OnItemSelect = function(sender, item, index)
+        if item == click then
+            SetEntityHealth(PlayerPedId(), 0)
+            notify("~g~Relocating...")
+        end
+    end
+end
+-- Used in "Fourth Item is an array of guns"
 weapons = {"weapon_sniperrifle", 
             "weapon_pistol",
             "weapon_rpg"
 }
-function ThirdItem(menu)
+function FourthItem(menu)
     local gunList = NativeUI.CreateListItem("Get Guns", weapons, 1)
     menu:AddItem(gunList)
     menu.OnListSelect = function (sender, item, index)
@@ -49,7 +58,7 @@ function ThirdItem(menu)
 end
 -- used in "FourthItem"
 seats = {-1,0,1,2}
-function FourthItem(menu)
+function FithItem(menu)
     local submenu = _menuPool:AddSubMenu(menu, "~b~Sub Menu")
     local carItem = NativeUI.CreateItem("Spawn car"
     , "spawn a car in a submenu")
@@ -75,6 +84,7 @@ end
     SecondItem(mainMenu)
     ThirdItem(mainMenu)
     FourthItem(mainMenu)
+    FithItem(mainMenu)
     _menuPool:RefreshIndex()
 
     Citizen.CreateThread(function()
