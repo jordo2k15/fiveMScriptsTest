@@ -1,18 +1,18 @@
---print("Hello World!")
+print("Hello World!")
 
---[[Basic Variables in lua
+Basic Variables in lua
 
 name= "John"
 number = 24
 number2 = 12
 boolean = true
 
---[[print(name .. " is ".. number .. " years old")
+print(name .. " is ".. number .. " years old")
 print(number - number2)
 print(boolean)
-]]--
 
---[[ ****If statements 
+
+****If statements 
 
 if boolean then 
 print("True")
@@ -36,7 +36,7 @@ if number2 > 10 then
     print("Number2 is greater than 10")
 end--]]
 
---[[ ***Basic function 
+***Basic function 
 
 function test()
     print("Running function")
@@ -52,9 +52,9 @@ end
 
 test2(number)
 
---]]
 
---[[ Arrays
+
+ Arrays
 
 array = {}
 
@@ -66,9 +66,9 @@ print(array[2])
 table.remove(array, 1)
 print(array[1])
 
---]]
 
---[[ ***Loops
+
+***Loops
 
 for i = 1, 20 do 
     print(i)
@@ -80,4 +80,3 @@ while loop <= 10 do
     print("Loop:" .. loop)
     loop = loop + 1
 end 
---]]

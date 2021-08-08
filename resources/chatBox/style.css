@@ -7,7 +7,7 @@
 
     position: absolute;
     right: calc(2.77vh);
-    top: calc(50% - (var(--size) / 2));
+    top: calc(20% - (var(--size) / 2));
     height: var(--size) !important;
 
     background: inherit !important;
@@ -103,11 +103,11 @@
 }
 
 .chat-input .prefix.any:before {
-    content: '[';
+    content: '';
 }
 
 .chat-input .prefix.any:after {
-    content: ']';
+    content: '';
 }
 
 .chat-input > div + div {
